@@ -6,8 +6,8 @@
 #define UART_TX_PIN  0
 #define UART_RX_PIN  1
 
-#define WIFI_SSID     "HUAWEI-4Ncg"
-#define WIFI_PASSWORD "AcVvgU2z"
+#define WIFI_SSID     "Your Wifi"
+#define WIFI_PASSWORD "Your Password"
 
 ESP8285Controller::ESP8285Controller() {
     uart_init(UART_ID, BAUD_RATE);
