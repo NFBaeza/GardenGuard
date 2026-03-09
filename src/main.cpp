@@ -4,14 +4,25 @@
 #include <cstring>
 #include "pico/stdlib.h"
 #include "ESP8285.h"
+#include "hardware/gpio.h"
+#include "hardware/adc.h"
 #include "mqtt.h"
 #include "main.h"
 
 
+#define airLevelSensor      2.77
+#define waterLevelSensor    1.02
+
+const float conversion_factor = 3.3f / (1 << 12);
+
 int main() {
     stdio_init_all();
     sleep_ms(2000);
-    
+
+    adc_init();
+    adc_gpio_init(26);
+    adc_select_input(0);
+
     printf("=== ESP8285 WiFi ===\n");
 
     auto& wifi = ESP8285Controller::instance();
@@ -24,10 +35,13 @@ int main() {
     MQTTController mqttConection = MQTTController("0","leaf1");
 
     mqttConection.connect(BROKER_IP, BROKER_PORT);
-    mqttConection.subcriptTopic("sensors/", 0);
-  
 
     while (true) {
-        tight_loop_contents();
+        float result = adc_read();
+        float voltageValue = result*conversion_factor;
+        int percentageMoisture = ((airLevelSensor - voltageValue)/(airLevelSensor - waterLevelSensor))*100;
+        printf("moisture Level %%: %d\n", percentageMoisture);
+        mqttConection.publish2Topic(std::to_string(percentageMoisture).c_str(),"sensors/moisture_level/", 0);
+        sleep_ms(5000);
     }
 }

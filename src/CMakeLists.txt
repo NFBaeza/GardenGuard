@@ -7,6 +7,7 @@ add_executable( ${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME}
     math_utils
     network_rpi_pico_esp8285
+    hardware_adc
 )
 
 pico_enable_stdio_usb(${PROJECT_NAME} 1)
