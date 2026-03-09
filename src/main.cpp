@@ -1,45 +1,31 @@
 #include <stdio.h>
 #include <string.h>
+#include <iostream>
+#include <cstring>
 #include "pico/stdlib.h"
 #include "ESP8285.h"
 #include "mqtt.h"
+#include "main.h"
 
 
 int main() {
     stdio_init_all();
     sleep_ms(2000);
-
-    ESP8285Controller wifi;
-
+    
     printf("=== ESP8285 WiFi ===\n");
 
-    if (!wifi.sendCommand("AT")) {
-        printf("No response from ESP8285. Check wiring.\n");
-        while (true) tight_loop_contents();
-    }
+    auto& wifi = ESP8285Controller::instance();
 
-    wifi.sendCommand("AT+CWMODE=1");
-
-    char join_cmd[128];
-    snprintf(join_cmd, sizeof(join_cmd),
-             "AT+CWJAP=\"%s\",\"%s\"", WIFI_SSID, WIFI_PASSWORD);
-    if (!wifi.sendCommand(join_cmd, 20000)) {
-        printf("WiFi connection failed.\n");
-        while (true) tight_loop_contents();
-    }
-
-    wifi.sendCommand("AT+CIFSR");
-
-    printf("Connected!\n");
-    wifi.sendCommand("AT+GMR");
-
-    printf("Start with mqtt!\n");
+    wifi.connectWiFi(WIFI_SSID, WIFI_PASSWORD);
+    wifi.getIP();
+ 
+    printf("=== ESP8285 MQTT ===\n");
 
     MQTTController mqttConection = MQTTController("0","leaf1");
 
-    printf("finish with mqtt user config!\n");
-
-    mqttConection.connect("", 9001);
+    mqttConection.connect(BROKER_IP, BROKER_PORT);
+    mqttConection.subcriptTopic("sensors/", 0);
+  
 
     while (true) {
         tight_loop_contents();

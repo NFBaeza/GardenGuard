@@ -15,7 +15,7 @@ add_executable(test_runner
 
 target_include_directories(test_runner PRIVATE
     ${CMAKE_SOURCE_DIR}/third_party/doctest
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_SOURCE_DIR}/include
 )
 
 target_compile_definitions(test_runner PRIVATE

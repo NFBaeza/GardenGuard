@@ -1,4 +1,4 @@
-# Garden Guard: keep your plants healty and strong <3
+# Garden Guard: ***keep your plants healty and strong <3***
 
 This is an Low Cost Project because I made a mistake (or AliExpress fool me) buying a Raspberry Pi Pico W for 4 USD, but it was **CLONED** board. That's mean the native WiFi driver doesn't work.
 
@@ -12,9 +12,6 @@ So I tried differents solutions (some of them are bellow), but to use WiFi and "
 - Ubuntu 22.04
 - (if you need as me) [custome Firmware for esp8285](files/ESP_AT_Firmware_V2.2.0.bin).
 
-```sh
-    sudo apt instal esptool
-```
 
 ### Just WiFI
 You can use [this code](files/main.cpp) right away. Don't be shy
@@ -26,7 +23,12 @@ If your version is lower than V2.0, you need to follow this steps.
 
 Drop this [pass-through code](files/Serial_port_transmission.uf) on you RPI Pico W. It's a code to "connect direct" to the second microcontroller.
 
+```sh
+    sudo apt instal esptool
+```
+
 Now you can check your chip, remember press the button (that one far from usb port) while you're plugging your pico board.
+
 
 ```sh
 # Check your chip, crystal oscillator 

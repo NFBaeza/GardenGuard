@@ -1,0 +1,3 @@
+[submodule "libs/Network-RPI-pico-ESP8285"]
+	path = libs/Network-RPI-pico-ESP8285
+	url = git@github.com:NFBaeza/Network-RPI-pico-ESP8285.git

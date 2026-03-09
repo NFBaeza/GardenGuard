@@ -37,4 +37,5 @@ pico_sdk_init()
 
 add_subdirectory(src)
 add_subdirectory(tests)
+add_subdirectory(libs/Network-RPI-pico-ESP8285)
 
