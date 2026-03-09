@@ -1,13 +1,18 @@
 # ────── Firmware target ──────
-add_executable( ${PROJECT_NAME} 
+add_executable( ${PROJECT_NAME}
                  main.cpp
+                 sleep_manager.cpp
                  ${CMAKE_SOURCE_DIR}/include
 
 )
 target_link_libraries(${PROJECT_NAME}
     math_utils
+    pico_stdlib
     network_rpi_pico_esp8285
     hardware_adc
+    hardware_rtc
+    hardware_sleep
+    hardware_clocks
 )
 
 pico_enable_stdio_usb(${PROJECT_NAME} 1)
