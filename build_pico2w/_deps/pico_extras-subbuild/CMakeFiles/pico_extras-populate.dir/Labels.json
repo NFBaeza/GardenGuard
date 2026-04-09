@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_extras-subbuild/CMakeFiles/pico_extras-populate"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_extras-subbuild/CMakeFiles/pico_extras-populate.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_extras-subbuild/CMakeFiles/pico_extras-populate-complete.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_extras-subbuild/pico_extras-populate-prefix/src/pico_extras-populate-stamp/pico_extras-populate-build.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_extras-subbuild/pico_extras-populate-prefix/src/pico_extras-populate-stamp/pico_extras-populate-configure.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_extras-subbuild/pico_extras-populate-prefix/src/pico_extras-populate-stamp/pico_extras-populate-download.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_extras-subbuild/pico_extras-populate-prefix/src/pico_extras-populate-stamp/pico_extras-populate-install.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_extras-subbuild/pico_extras-populate-prefix/src/pico_extras-populate-stamp/pico_extras-populate-mkdir.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_extras-subbuild/pico_extras-populate-prefix/src/pico_extras-populate-stamp/pico_extras-populate-patch.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_extras-subbuild/pico_extras-populate-prefix/src/pico_extras-populate-stamp/pico_extras-populate-test.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_extras-subbuild/pico_extras-populate-prefix/src/pico_extras-populate-stamp/pico_extras-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"pico_extras-populate"
+		],
+		"name" : "pico_extras-populate"
+	}
+}

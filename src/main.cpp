@@ -22,8 +22,6 @@ int main() {
     stdio_init_all();
     sleep_ms(2000);
 
-    sleep_manager_init();
-
     adc_init();
     adc_gpio_init(26);
     adc_select_input(0);
@@ -33,21 +31,30 @@ int main() {
     wifi.connectWiFi(WIFI_SSID, WIFI_PASSWORD);
     wifi.getIP();
 
-    printf("=== ESP8285 MQTT ===\n");
-    MQTTController mqttConection = MQTTController("0", "leaf1");
-    mqttConection.connect(BROKER_IP, BROKER_PORT);
-
     while (true) {
+        MQTTController mqttConection = MQTTController("0", "leaf1");
+        while (!mqttConection.connect(BROKER_IP, BROKER_PORT)){sleep_ms(5000);} 
+
         float result = adc_read();
         float voltageValue = result * conversion_factor;
         int percentageMoisture = ((airLevelSensor - voltageValue) / (airLevelSensor - waterLevelSensor)) * 100;
         printf("moisture Level %%: %d\n", percentageMoisture);
-        mqttConection.publish2Topic(std::to_string(percentageMoisture).c_str(), "sensors/moisture_level/", 0);
 
-        wifi.sendCommand("AT+GSLP=300000");  // ESP8285 dormant 5 min
-        dormant_sleep();                      // Pico dormant 5 min
+        char payload[128];
+        snprintf(payload, sizeof(payload),
+            "{\"device_id\":%s,\"moisture\":%.1f,\"unit\":\"%%\"}",
+            mqttConection.,percentageMoisture
+        );
 
-        wifi.connectWiFi(WIFI_SSID, WIFI_PASSWORD);
-        mqttConection.connect(BROKER_IP, BROKER_PORT);
+        while(!mqttConection.publish2Topic(std::to_string(percentageMoisture).c_str(), "sensors/moisture_level/", 0)){
+            sleep_ms(5000);
+            printf("somthing fails\n");
+        }
+        printf("setting a sleeping mode\n");
+        wifi.sendCommand("AT+SLEEPWKCFG=0,300000");  // ESP8285 dormant 5 min
+        dormant_sleep();                             // Pico dormant 5 min
+
+        printf("waking up\n");
+        while (!wifi.connectWiFi(WIFI_SSID, WIFI_PASSWORD)){sleep_ms(5000);} 
     }
 }

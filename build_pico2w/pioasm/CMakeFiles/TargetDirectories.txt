@@ -1,0 +1,7 @@
+/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/pioasm/CMakeFiles/pioasm.dir
+/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/pioasm/CMakeFiles/edit_cache.dir
+/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/pioasm/CMakeFiles/rebuild_cache.dir
+/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/pioasm/CMakeFiles/list_install_components.dir
+/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/pioasm/CMakeFiles/install.dir
+/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/pioasm/CMakeFiles/install/local.dir
+/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/pioasm/CMakeFiles/install/strip.dir
