@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_sdk-subbuild/CMakeFiles/pico_sdk-populate"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_sdk-subbuild/CMakeFiles/pico_sdk-populate.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_sdk-subbuild/CMakeFiles/pico_sdk-populate-complete.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_sdk-subbuild/pico_sdk-populate-prefix/src/pico_sdk-populate-stamp/pico_sdk-populate-build.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_sdk-subbuild/pico_sdk-populate-prefix/src/pico_sdk-populate-stamp/pico_sdk-populate-configure.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_sdk-subbuild/pico_sdk-populate-prefix/src/pico_sdk-populate-stamp/pico_sdk-populate-download.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_sdk-subbuild/pico_sdk-populate-prefix/src/pico_sdk-populate-stamp/pico_sdk-populate-install.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_sdk-subbuild/pico_sdk-populate-prefix/src/pico_sdk-populate-stamp/pico_sdk-populate-mkdir.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_sdk-subbuild/pico_sdk-populate-prefix/src/pico_sdk-populate-stamp/pico_sdk-populate-patch.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_sdk-subbuild/pico_sdk-populate-prefix/src/pico_sdk-populate-stamp/pico_sdk-populate-test.rule"
+		},
+		{
+			"file" : "/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/pico_sdk-subbuild/pico_sdk-populate-prefix/src/pico_sdk-populate-stamp/pico_sdk-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"pico_sdk-populate"
+		],
+		"name" : "pico_sdk-populate"
+	}
+}

@@ -1,0 +1,2 @@
+/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/picotool-build/enc_bootloader/CMakeFiles/edit_cache.dir
+/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/picotool-build/enc_bootloader/CMakeFiles/rebuild_cache.dir
