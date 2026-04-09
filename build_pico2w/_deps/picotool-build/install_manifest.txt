@@ -1,7 +1,0 @@
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/picotool/picotool
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/picotool/picotoolTargets.cmake
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/picotool/picotoolTargets-release.cmake
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/picotool/picotoolConfig.cmake
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/picotool/picotoolConfigVersion.cmake
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/picotool/enc_bootloader.elf
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/picotool/enc_bootloader_mbedtls.elf

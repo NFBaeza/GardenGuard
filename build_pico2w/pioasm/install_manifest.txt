@@ -1,5 +1,0 @@
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/pioasm-install/pioasm/pioasm
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/pioasm-install/pioasm/pioasmTargets.cmake
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/pioasm-install/pioasm/pioasmTargets-release.cmake
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/pioasm-install/pioasm/pioasmConfig.cmake
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/pioasm-install/pioasm/pioasmConfigVersion.cmake
