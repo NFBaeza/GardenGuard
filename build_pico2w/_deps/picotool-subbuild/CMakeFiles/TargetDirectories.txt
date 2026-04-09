@@ -1,3 +1,0 @@
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/picotool-subbuild/CMakeFiles/picotool-populate.dir
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/picotool-subbuild/CMakeFiles/edit_cache.dir
-/media/miosa/CommonDisk/Projects/GardenGuard/build_pico2w/_deps/picotool-subbuild/CMakeFiles/rebuild_cache.dir
