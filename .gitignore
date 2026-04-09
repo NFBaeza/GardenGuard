@@ -1,4 +1,5 @@
 build
+build_pico2w
 .vscode/*
 .claude
 include/main.h
